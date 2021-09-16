@@ -7,6 +7,7 @@ public class Ejercicio1 {
 		System.out.println("gggggg");
 		System.out.println("\n\n\n con esto consigues saltos de linea");
 		System.out.println("con esto tabulas \t\t dentro de la linea");
+		System.out.println("probando git a ver si detecta el cambio");
 	}
 
 }
