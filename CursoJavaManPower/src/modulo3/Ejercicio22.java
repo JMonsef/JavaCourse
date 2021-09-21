@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class Ejercicio22 {
 
 	public static void main(String[] args) {
-		int contador = 0;
+		int contador = 1;
 		while(contador<11) {
 		
 		int trabajador[] = new int[3];
