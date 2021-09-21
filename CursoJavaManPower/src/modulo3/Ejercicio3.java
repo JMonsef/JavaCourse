@@ -17,26 +17,12 @@ public class Ejercicio3 {
 		mes = sc.nextLine();
 		mes = mes.toLowerCase().trim();
 		
-		switch(mes) {
-			case "noviembre":
-				System.out.print("Este mes tiene 31");
-				break;
-			case "junio":
-				System.out.print("Este mes tiene 31");
-				break;
-			case "septiembre":
-				System.out.print("Este mes tiene 31");
-				break;
-			case "abril":
-				System.out.print("Este mes tiene 31");
-				break;
-			case "febrero":
-				System.out.print("Este mes tiene 28");
-				break;
-			default:
-				System.out.println("este mes tiene 30");
-		}
-		
+		if(mes == "noviembre" || mes == "junio" || mes == "septiembre" || mes == "abril")
+			System.out.print("Este mes tiene 31");
+		else if(mes == "febrero")
+			System.out.print("Este mes tiene 28");
+		else
+			System.out.print("Este mes tiene 30");
 	}
 
 }
