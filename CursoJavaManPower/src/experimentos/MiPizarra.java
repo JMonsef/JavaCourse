@@ -9,8 +9,7 @@ public class MiPizarra {
 		obj1 a = new obj1("pipi cucu",1);
 		obj2 b = new obj2("nickelao",2);
 		System.out.println(a.prueba);
-		Object c = b;
-		a = (obj1) c;
+		
 		System.out.println(a.prueba);
 	}
 

@@ -26,6 +26,7 @@ public class Persona {
 	public void setNombre(String nombre) {
 		Nombre = nombre;
 	}
+	
 	@Override
 	public int hashCode() {
 		return Objects.hash(Apellido, Nombre);

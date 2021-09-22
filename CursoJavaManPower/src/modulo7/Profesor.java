@@ -18,6 +18,7 @@ public class Profesor extends Persona {
 	public void setIosfa(String iosfa) {
 		this.iosfa = iosfa;
 	}
+	
 	@Override
 	public int hashCode() {
 		final int prime = 31;
@@ -25,6 +26,7 @@ public class Profesor extends Persona {
 		result = prime * result + Objects.hash(iosfa);
 		return result;
 	}
+	
 	@Override
 	public boolean equals(Object obj) {
 		if (this == obj)
