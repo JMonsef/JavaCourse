@@ -2,18 +2,17 @@ package modulo8;
 
 import java.util.Objects;
 
-public class Figura {
+public abstract class Figura {
 	
-	private float maximaSuperficie;
+	protected float maximaSuperficie;
 	private String nombre;
 	
 	public Figura() {
 		super();
 	}
 
-	public Figura(float maximaSuperficie, String nombre) {
+	public Figura(String nombre) {
 		super();
-		this.maximaSuperficie = maximaSuperficie;
 		this.nombre = nombre;
 	}
 
@@ -50,12 +49,17 @@ public class Figura {
 		return Float.floatToIntBits(maximaSuperficie) == Float.floatToIntBits(other.maximaSuperficie)
 				&& Objects.equals(nombre, other.nombre);
 	}
-
+	
 	@Override
 	public String toString() {
 		return "Figura [maximaSuperficie=" + maximaSuperficie + ", nombre=" + nombre + "]";
 	}
 	
+	abstract public String getValores();
+	
+	abstract public float calcularPerimetro();
+	
+	abstract public float calcularSuperficie();
 	
 	
 }
