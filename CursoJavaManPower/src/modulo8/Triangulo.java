@@ -1,5 +1,7 @@
 package modulo8;
 
+import java.util.Objects;
+
 public class Triangulo extends Figura {
 	
 	private float lado1;
@@ -38,6 +40,28 @@ public class Triangulo extends Figura {
 
 	public void setLado3(float lado3) {
 		this.lado3 = lado3;
+	}
+	
+	@Override
+	public int hashCode() {
+		final int prime = 31;
+		int result = super.hashCode();
+		result = prime * result + Objects.hash(lado1, lado2, lado3);
+		return result;
+	}
+
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (!super.equals(obj))
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		Triangulo other = (Triangulo) obj;
+		return Float.floatToIntBits(lado1) == Float.floatToIntBits(other.lado1)
+				&& Float.floatToIntBits(lado2) == Float.floatToIntBits(other.lado2)
+				&& Float.floatToIntBits(lado3) == Float.floatToIntBits(other.lado3);
 	}
 
 	@Override

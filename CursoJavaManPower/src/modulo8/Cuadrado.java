@@ -54,7 +54,7 @@ public class Cuadrado extends Figura {
 	
 	@Override
 	public float calcularPerimetro() {
-		float resultado = 4 * getLado();
+		float resultado = 4f * getLado();
 		return resultado;
 	}
 
