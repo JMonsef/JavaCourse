@@ -1,0 +1,4 @@
+127.0.0.1 - - [27/Sep/2021:13:26:29 +0200] "GET / HTTP/1.1" 404 687
+0:0:0:0:0:0:0:1 - - [27/Sep/2021:13:26:38 +0200] "GET /HolaSpringFrameWork/Index.jsp HTTP/1.1" 200 152
+0:0:0:0:0:0:0:1 - - [27/Sep/2021:13:26:47 +0200] "GET /HolaSpringFrameWork/Index.jsp HTTP/1.1" 200 152
+0:0:0:0:0:0:0:1 - - [27/Sep/2021:13:26:47 +0200] "GET /favicon.ico HTTP/1.1" 404 698
