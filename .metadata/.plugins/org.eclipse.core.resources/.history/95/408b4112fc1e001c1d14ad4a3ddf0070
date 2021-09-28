@@ -1,0 +1,39 @@
+package modulo9.controlador;
+
+import java.sql.Connection;
+import java.sql.SQLException;
+import java.util.List;
+
+import modulo9.modelo.DAO;
+import modulo9.modelo.Model;
+
+public class PracticaDao implements DAO {
+	
+	private Connection conexion;
+	
+	@Override
+	public void agregar(Model pMod) throws ClassNotFoundException, SQLException {
+		ConnectionManager.conectar();
+		
+		
+	}
+
+	@Override
+	public void modificar(Model pMod) throws ClassNotFoundException, SQLException {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void eliminar(Model pMod) throws ClassNotFoundException, SQLException {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public List<Model> leer(Model pMod) throws ClassNotFoundException, SQLException {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

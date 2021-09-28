@@ -1,0 +1,86 @@
+package modulo8;
+
+import java.util.Objects;
+
+public class Rectangulo extends Figura{
+
+	private float altura;
+	private float base;
+	
+	public Rectangulo() {
+		super();
+	}
+	
+	public Rectangulo(float maximaSuperficie, String nombre, float altura, float base) {
+		super(maximaSuperficie, nombre);
+		this.altura = altura;
+		this.base = base;
+	}
+
+	public float getAltura() {
+		return altura;
+	}
+
+	public void setAltura(float altura) {
+		this.altura = altura;
+	}
+
+	public float getBase() {
+		return base;
+	}
+
+	public void setBase(float base) {
+		this.base = base;
+	}
+	
+	
+
+	@Override
+	public int hashCode() {
+		final int prime = 31;
+		int result = super.hashCode();
+		result = prime * result + Objects.hash(altura, base);
+		return result;
+	}
+
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (!super.equals(obj))
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		Rectangulo other = (Rectangulo) obj;
+		return Float.floatToIntBits(altura) == Float.floatToIntBits(other.altura)
+				&& Float.floatToIntBits(base) == Float.floatToIntBits(other.base);
+	}
+
+	
+	
+	@Override
+	public String toString() {
+		return "Rectangulo [altura=" + altura + ", base=" + base + ", getValores()=" + getValores()
+				+ ", calcularPerimetro()=" + calcularPerimetro() + ", calcularSuperficie()=" + calcularSuperficie()
+				+ "]";
+	}
+
+	@Override
+	public String getValores() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public float calcularPerimetro() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public float calcularSuperficie() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+}

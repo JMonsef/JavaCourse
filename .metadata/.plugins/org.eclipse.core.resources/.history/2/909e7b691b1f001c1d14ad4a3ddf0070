@@ -1,0 +1,28 @@
+package modulo9.test;
+
+import java.sql.SQLException;
+import java.util.ArrayList;
+import java.util.List;
+
+import modulo9.controlador.PracticaDao;
+import modulo9.modelo.*;
+
+public class Select {
+
+	public static void main(String[] args) throws ClassNotFoundException, SQLException {
+		
+		
+		Model pr = new Practica(1);
+		Practica pr1 = new Practica();
+		PracticaDao pd = new PracticaDao();
+		
+		List<Model> lista = new ArrayList<Model>(pd.leer(pr));
+		
+		for(Model practica: lista) {
+			pr1 = (Practica)practica;
+			System.out.println(pr1.getPRAC_NOMBRE());
+		}
+		
+	}
+
+}

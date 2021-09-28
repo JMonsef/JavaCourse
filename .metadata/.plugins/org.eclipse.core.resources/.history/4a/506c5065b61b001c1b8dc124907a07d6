@@ -1,0 +1,63 @@
+package modulo7;
+
+import static org.junit.Assert.*;
+
+import java.util.ArrayList;
+import java.util.HashSet;
+import java.util.List;
+import java.util.Set;
+
+import org.junit.After;
+import org.junit.Before;
+import org.junit.Test;
+
+public class ProfesorTest {
+	
+	List <Profesor> profesorLista;
+	Set <Profesor> profesorSet;
+	Profesor profesorEjemplo;
+	
+	
+	@Before
+	public void setUp() throws Exception {
+		profesorEjemplo = new Profesor("Gabriel","Casas","434");
+		
+		profesorLista = new ArrayList<Profesor>();
+		profesorLista.add(new Profesor("Gabriel","Casas","434"));
+		profesorLista.add(new Profesor("Sara","Vargas","321"));
+		profesorLista.add(new Profesor("Juan","Lopez","124"));
+		
+		profesorSet = new HashSet<Profesor>();
+		profesorSet.add(new Profesor("Gabriel","Casas","434"));
+		profesorSet.add(new Profesor("Sara","Vargas","321"));
+		profesorSet.add(new Profesor("Juan","Lopez","124"));
+	}
+
+	@After
+	public void tearDown() throws Exception {
+		profesorLista = null;
+		profesorSet = null;
+		profesorEjemplo = null;
+	}
+
+	@Test
+	public void testHashCode() {
+		assertTrue(profesorLista.contains(profesorEjemplo));
+	}
+
+	@Test
+	public void testEqualsObject() {
+		fail("Not yet implemented");
+	}
+
+	@Test
+	public void testProfesor() {
+		fail("Not yet implemented");
+	}
+
+	@Test
+	public void testProfesorStringStringString() {
+		fail("Not yet implemented");
+	}
+
+}

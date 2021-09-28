@@ -1,0 +1,26 @@
+package modulo8;
+
+public class Cuadrado extends Figura {
+
+	public Cuadrado() {
+		// TODO Auto-generated constructor stub
+	}
+
+	public Cuadrado(float maximaSuperficie, String nombre) {
+		super(maximaSuperficie, nombre);
+		// TODO Auto-generated constructor stub
+	}
+
+	@Override
+	public float calcularPerimetro() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public float calcularSuperficie() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+}

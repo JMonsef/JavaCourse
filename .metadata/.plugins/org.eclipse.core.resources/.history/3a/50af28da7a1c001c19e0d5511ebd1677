@@ -1,0 +1,27 @@
+package modulo8;
+
+public class Circulo extends Figura {
+	private float radio;
+	
+	public Circulo() {
+		super();
+	}
+
+	public Circulo(float maximaSuperficie, String nombre, float radio) {
+		super(maximaSuperficie, nombre);
+		this.radio = radio;
+	}
+
+	@Override
+	public float calcularPerimetro() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public float calcularSuperficie() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+}

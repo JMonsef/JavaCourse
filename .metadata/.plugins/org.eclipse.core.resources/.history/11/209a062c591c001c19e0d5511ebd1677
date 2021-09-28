@@ -1,0 +1,50 @@
+package patrones.factory;
+
+import java.util.*;
+
+public abstract class PiedraPapelTijeraFactory {
+	
+	private static List<PiedraPapelTijeraFactory> elementos;
+	private String nombre;
+	private int numero;
+	
+	public String getNombre() {
+		return nombre;
+	}
+
+	public void setNombre(String nombre) {
+		this.nombre = nombre;
+	}
+
+	public int getNumero() {
+		return numero;
+	}
+
+	public void setNumero(int numero) {
+		this.numero = numero;
+	}
+
+	public PiedraPapelTijeraFactory() {
+		
+	}
+	
+	public static PiedraPapelTijeraFactory getInstance(int numero) {
+		elementos = new ArrayList<PiedraPapelTijeraFactory>();
+		elementos.add(new Piedra());
+		elementos.add(new Papel());
+		elementos.add(new Tijera());
+		for(PiedraPapelTijeraFactory pptf: elementos) {
+			if(PiedraPapelTijeraFactory.isMe(numero))
+				return pptf;
+			
+		}
+		return null;
+	}
+	
+	public static boolean isMe(int pNumero) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+	
+	public abstract int comparar(PiedraPapelTijeraFactory pptf);
+}

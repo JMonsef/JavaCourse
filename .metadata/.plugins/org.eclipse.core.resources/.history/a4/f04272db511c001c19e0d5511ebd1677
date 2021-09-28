@@ -1,0 +1,22 @@
+package patrones.factory;
+
+public class Tijera extends PiedraPapelTijeraFactory {
+	
+	public Tijera() {
+		setNumero(2);
+		setNombre("Tijera");
+	}
+
+	@Override
+	public boolean isMe(int pNumero) {
+		// TODO Auto-generated method stub
+		return pNumero == 2;
+	}
+
+	@Override
+	public int comparar(PiedraPapelTijeraFactory pptf) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+}

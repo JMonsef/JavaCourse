@@ -1,0 +1,76 @@
+1632135160250	Delete element
+1632135833299	Delete element
+1632156705710	Delete element
+1632156794934	Delete element
+1632156801382	Delete element
+1632156976043	Move package
+1632157931450	Delete element
+1632157957070	Rename package 'parte1'
+1632158000986	Delete element
+1632158021067	Move compilation unit
+1632158025261	Move compilation unit
+1632158028828	Move compilation unit
+1632160497690	Delete element
+1632198156017	Rename local variable 'variables'
+1632209668857	Delete element
+1632209685853	Move compilation unit
+1632209690073	Move compilation unit
+1632209694199	Move compilation unit
+1632235279318	Delete element
+1632237302149	Delete element
+1632237469389	Delete element
+1632237737005	Delete element
+1632238164886	Delete element
+1632239421766	Delete element
+1632240484979	Delete element
+1632240526385	Delete element
+1632244137104	Delete element
+1632244142521	Delete element
+1632244407477	Delete element
+1632295599179	Delete element
+1632295615257	Delete element
+1632319542314	Delete element
+1632319548558	Delete element
+1632320057475	Delete element
+1632331352497	Delete element
+1632331392762	Move compilation unit
+1632331400583	Move compilation unit
+1632387200194	Delete element
+1632387208802	Delete element
+1632387259100	Delete element
+1632387348955	Delete element
+1632393251378	Delete element
+1632422083317	Rename field 'cal'
+1632422343974	Rename local variable 'pattern'
+1632422530283	Rename method 'isOrNotFinDeSemana'
+1632422599611	Rename method 'getDiaDeSemana'
+1632422630539	Rename method 'getAnio'
+1632422647617	Rename method 'getMes'
+1632422660763	Rename method 'getDia'
+1632422691442	Rename method 'getDiaSemana'
+1632422713783	Rename local variable 'Pattern'
+1632422751514	Rename method 'asData'
+1632422768584	Rename method 'asCalendar'
+1632422803672	Rename method 'asString'
+1632422816621	Rename local variable 'Pattern'
+1632422845001	Rename local variable 'fechaRec'
+1632423140448	Rename local variable 'Pattern'
+1632423459176	Rename package 'modulo6.parte1'
+1632423899121	Rename local variable 'str'
+1632424453478	Rename local variable 'i'
+1632424905846	Rename method 'parseData'
+1632424920777	Rename method 'parseCalendar'
+1632424937870	Rename method 'parseString'
+1632425041809	Rename local variable 'fecha1Cal'
+1632428211185	Rename field 'cuadradoPrueba'
+1632430026961	Rename field 'circuloPrueba'
+1632430062141	Rename field 'listaCirculos'
+1632430394775	Rename local variable 'circuloPrueba2'
+1632430528020	Rename local variable 'cuadradoPrueba2'
+1632431111858	Rename field 'rectanguloPrueba'
+1632431147860	Rename field 'listaRectangulos'
+1632431159828	Rename field 'setRectangulos'
+1632679011159	Delete element
+1632679122729	Copy compilation unit
+1632679129251	Delete element
+1632696313610	Delete element

@@ -1,0 +1,22 @@
+package modulo9.test;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import modulo9.controlador.PracticaDao;
+import modulo9.modelo.*;
+
+public class Select {
+
+	public static void main(String[] args) {
+		
+		
+		Model pr = new Practica(1);
+		PracticaDao pd = new PracticaDao();
+		
+		List<Model> lista = new ArrayList<Practica>();
+		lista = pd.leer(pr);
+		
+	}
+
+}

@@ -1,0 +1,74 @@
+package modulo8;
+
+import java.util.Objects;
+
+public class Circulo extends Figura {
+	private float radio;
+	
+	public Circulo() {
+		super();
+	}
+
+	public Circulo(float maximaSuperficie, String nombre, float radio) {
+		super(maximaSuperficie, nombre);
+		this.radio = radio;
+	}
+	
+
+	public float getRadio() {
+		return radio;
+	}
+
+	public void setRadio(float radio) {
+		this.radio = radio;
+	}
+	
+	
+
+	@Override
+	public int hashCode() {
+		final int prime = 31;
+		int result = super.hashCode();
+		result = prime * result + Objects.hash(radio);
+		return result;
+	}
+
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (!super.equals(obj))
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		Circulo other = (Circulo) obj;
+		return Float.floatToIntBits(radio) == Float.floatToIntBits(other.radio);
+	}
+
+
+	
+	@Override
+	public String toString() {
+		return "Circulo [radio=" + radio + ", getRadio()=" + getRadio() + ", calcularPerimetro()=" + calcularPerimetro()
+				+ ", getValores()=" + getValores() + "]";
+	}
+
+	@Override
+	public float calcularPerimetro() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public float calcularSuperficie() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public String getValores() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+	
+}

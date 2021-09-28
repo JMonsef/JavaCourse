@@ -1,0 +1,5 @@
+package modulo7;
+
+public class Alumno {
+	private int legajo;
+}

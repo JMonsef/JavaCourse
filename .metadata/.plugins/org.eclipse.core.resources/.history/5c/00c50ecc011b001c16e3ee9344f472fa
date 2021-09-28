@@ -1,0 +1,6 @@
+package experimentos;
+
+public class obj1 {
+	public String prueba;
+	public int num;
+}

@@ -1,0 +1,63 @@
+package modulo6.Parte1;
+
+public class StringUtil {
+
+
+	static char primero;
+	
+	public static void main(String[] args) {
+		String mensaje = "Hola Mundo";
+	    
+	    if(containsDobleSpace(mensaje)) 
+	    	System.out.println("hay doble espacio \n");
+	    else
+	    	System.out.println("no hay doble espacio \n");
+	    	
+	    System.out.println("tiene un numero: \n");
+	    
+	    if(containsNumber(mensaje)) {
+	    	
+	    	System.out.println("El String tiene numeros");
+	    	
+	    }else {
+	    	
+	    	System.out.println("no tiene numeros");
+	    	
+	    }
+		
+	}
+	
+	public static boolean containsDobleSpace(String mensaje) {
+		
+	    for(int x = 0; x < mensaje.length(); x++) {
+	    	
+	    	if(mensaje.charAt(x) == ' ' && mensaje.charAt(x+1) == ' ') {
+	    		return true;
+	    	}
+	    }
+	    	
+	    
+	    return false;
+		
+	}
+	
+	public static boolean containsNumber(String mensaje) {
+		
+		int longitud = mensaje.length();
+		
+		for(int x = 0; x < longitud; x++) {
+			
+			char c = mensaje.charAt(x);
+	        if (!(c >= 'a' && c <= 'z')) {
+	            
+	        	x = longitud;
+	        	return true;
+	        }
+			
+		}
+		
+		return false;
+		
+	}
+	
+}

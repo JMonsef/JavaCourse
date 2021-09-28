@@ -1,0 +1,56 @@
+package modulo9.test;
+
+import static org.junit.Assert.*;
+
+import java.sql.SQLException;
+
+import org.junit.After;
+import org.junit.Before;
+import org.junit.Test;
+import modulo9.controlador.*;
+import modulo9.modelo.Model;
+import modulo9.modelo.Practica;
+
+public class TestPracticaDao {
+	
+	PracticaDao pd;
+	Model usuarioTest;
+	Model usuarioTestModificar;
+	
+	@Before
+	public void setUp() throws Exception {
+		pd = new PracticaDao();
+		usuarioTest = new Practica(12,"practica 12");
+		usuarioTestModificar = new Practica(12,"practica 15");
+	}
+
+	@After
+	public void tearDown() throws Exception {
+		
+	}
+
+	@Test
+	public void testAgregar() throws ClassNotFoundException, SQLException {
+		
+		assertEquals(1,pd.agregar(usuarioTest));
+	}
+
+	@Test
+	public void testModificar() throws ClassNotFoundException, SQLException {
+		
+		assertEquals(1,pd.modificar(usuarioTestModificar));
+		
+	}
+
+	@Test
+	public void testEliminar() throws ClassNotFoundException, SQLException {
+
+		assertEquals(1,pd.eliminar(usuarioTest));
+	}
+
+	@Test
+	public void testLeer() {
+		fail("Not yet implemented");
+	}
+
+}

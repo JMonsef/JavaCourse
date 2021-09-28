@@ -1,0 +1,4 @@
+module cursoJavaManPower {
+	requires java.desktop;
+	requires java.sql;
+}

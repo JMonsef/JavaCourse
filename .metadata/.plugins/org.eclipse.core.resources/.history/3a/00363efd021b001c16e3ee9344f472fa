@@ -1,0 +1,17 @@
+package experimentos;
+
+public class MiPizarra {
+
+	public static void main(String[] args) {
+		// aqui experimento las cosas bizarras que se me ocurren, 
+		//no tiene que ver con los deberes (mas o menos)
+		
+		Object a = new obj1("pipi cucu",1);
+		Object b = new obj2("nickelao",2);
+		System.out.println(a);
+		Object c = b;
+		a = (obj1) c;
+		System.out.println(a);
+	}
+
+}

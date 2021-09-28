@@ -1,0 +1,55 @@
+package modulo9.controlador;
+
+import java.sql.*;
+import java.util.ArrayList;
+import java.util.List;
+
+import modulo9.modelo.DAO;
+import modulo9.modelo.Model;
+import modulo9.modelo.Practica;
+
+public class PracticaDao implements DAO {
+	
+	private Connection conexion;
+	
+	public PracticaDao() {
+		
+	}
+	
+	@Override
+	public void agregar(Model pMod) throws ClassNotFoundException, SQLException {
+		
+	}
+
+	@Override
+	public void modificar(Model pMod) throws ClassNotFoundException, SQLException {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void eliminar(Model pMod) throws ClassNotFoundException, SQLException {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public List<Model> leer(Model pMod) throws ClassNotFoundException, SQLException {
+		
+		List<Model> practicas = new ArrayList<Model>();
+		
+		conexion = ConnectionManager.conectar();
+		StringBuilder sql = new StringBuilder("select PRAC_NOMBRE");
+		sql.append(" from practicas");
+		
+		PreparedStatement sentencia = conexion.prepareStatement(sql.toString());
+		ResultSet resultado = sentencia.executeQuery();
+		
+		while(resultado.next()) {
+			practicas.add(new Practica(resultado.getString("PRAC_NOMBRE")));
+		}
+		
+		return practicas;
+	}
+
+}

@@ -1,0 +1,36 @@
+package modulo8;
+
+public class Rectangulo extends Figura{
+
+	private float altura;
+	private float base;
+	
+	public Rectangulo() {
+		super();
+	}
+	
+	public Rectangulo(float maximaSuperficie, String nombre, float altura, float base) {
+		super(maximaSuperficie, nombre);
+		this.altura = altura;
+		this.base = base;
+	}
+
+	@Override
+	public String getValores() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public float calcularPerimetro() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public float calcularSuperficie() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+}

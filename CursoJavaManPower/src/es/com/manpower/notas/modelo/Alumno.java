@@ -23,6 +23,10 @@ public class Alumno implements Model {
 		this.linkArepositorio = linkArepositorio;
 	}
 
+	public Alumno(int codigo) {
+		this.codigo = codigo;
+	}
+
 	public int getCodigo() {
 		return codigo;
 	}
@@ -94,6 +98,11 @@ public class Alumno implements Model {
 		sb.append(", practicasResueltas=");
 		sb.append(this.practicasResueltas);
 		return sb.toString();
+	}
+
+	public boolean isEmpty() {
+		// TODO Auto-generated method stub
+		return false;
 	}
 	
 
