@@ -2,6 +2,8 @@
 <section name="Workbench">
 	<section name="MavenProjectWizardLocationPage">
 		<list key="location">
+			<item value="C:\Users\moises\Documents\eclipse-workspace\ManPower\JavaCourse\spring-workspace"/>
+			<item value="C:\Users\moises\Documents\eclipse-workspace\ManPower\JavaCourse\spring-workspace\DemoWeb"/>
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>
@@ -13,6 +15,7 @@
 		</list>
 	</section>
 	<section name="MavenProjectWizardArchetypePage">
+		<item key="catalog" value="All Catalogs"/>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>
 			<item value="[artifactId]-TRUNK"/>
@@ -24,10 +27,13 @@
 	</section>
 	<section name="Maven2ProjectWizardArchifactPage">
 		<list key="package">
+			<item value="com.gabrielCode.SpringBoot"/>
 		</list>
 		<list key="groupId">
+			<item value="com.gabrielCode"/>
 		</list>
 		<list key="artifactId">
+			<item value="SpringBoot"/>
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>
@@ -43,12 +49,10 @@
 	</section>
 	<section name="MavenProjectWizardArtifactPage">
 		<list key="groupId">
-			<item value="es.com.monsef"/>
 		</list>
 		<list key="name">
 		</list>
 		<list key="artifactId">
-			<item value="HolaSpringFrameWork"/>
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>
