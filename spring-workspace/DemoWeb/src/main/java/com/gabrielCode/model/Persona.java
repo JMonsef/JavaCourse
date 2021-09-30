@@ -9,6 +9,8 @@ public class Persona {
 	@Column(name = "PER_NOMBRE", length = 50)
 	private String nombre;
 	
+	public Persona() {}
+	
 	public Persona(int codigo, String nombre) {
 		super();
 		this.codigo = codigo;
